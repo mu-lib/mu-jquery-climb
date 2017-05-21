@@ -4,11 +4,11 @@
   } else if (typeof module === "object" && module.exports) {
     module.exports = factory.apply(root, modules.map(require));
   } else {
-    root["mu-jquery-climb/jquery.climb"] = factory.apply(root, modules.map(function (m) {
+    root["mu-jquery-climb/jquery.tree"] = factory.apply(root, modules.map(function (m) {
       return root[m.replace(/^\./, "mu-jquery-climb")];
     }));
   }
-})(["./branch"], this, function (branch) {
+})(["./jquery.branch"], this, function (branch) {
   function climb(selector, root, callback, depth) {
     var me = this;
     var $ = me.constructor;

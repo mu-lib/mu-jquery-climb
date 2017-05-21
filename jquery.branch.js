@@ -6,7 +6,7 @@
   } else {
     root["mu-jquery-climb/jquery.branch"] = factory.call(root);
   }
-})(["./branch"], this, function (branch) {
+})([], this, function () {
   return function (selector, root) {
     var me = this;
     var $ = me.constructor;
