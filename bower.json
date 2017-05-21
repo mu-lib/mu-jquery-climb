@@ -3,7 +3,7 @@
   "authors": [
     "Mikael Karon <mikael@karon.se>"
   ],
-  "description": "jQuery plugin for climb logic",
+  "description": "jQuery plugin for tree climbing and annotation",
   "main": "",
   "license": "MIT",
   "homepage": "",

@@ -1,7 +1,7 @@
 {
   "name": "mu-jquery-climb",
   "version": "0.0.2",
-  "description": "jQuery plugin for step tree climbing and annotation",
+  "description": "jQuery plugin for tree climbing and annotation",
   "main": "",
   "scripts": {
     "release": "standard-version"

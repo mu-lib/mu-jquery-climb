@@ -1,2 +1,2 @@
 # mu-jquery-climb
-jQuery plugin for step tree climbing and annotation
+jQuery plugin for tree climbing and annotation
