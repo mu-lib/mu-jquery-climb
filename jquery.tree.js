@@ -1,14 +1,12 @@
-(function (modules, root, factory) {
+(function (root, factory) {
   if (typeof define === "function" && define.amd) {
-    define(modules, factory);
+    define(["./jquery.branch"], factory);
   } else if (typeof module === "object" && module.exports) {
-    module.exports = factory.apply(root, modules.map(require));
+    module.exports = factory(require("./jquery.branch"));
   } else {
-    root["mu-jquery-climb/jquery.tree"] = factory.apply(root, modules.map(function (m) {
-      return root[m.replace(/^\./, "mu-jquery-climb")];
-    }));
+    root["mu-jquery-climb/jquery.tree"] = factory(root["mu-jquery-climb/jquery.branch"]);
   }
-})(["./jquery.branch"], this, function (branch) {
+})(this, function (branch) {
   function climb(selector, root, callback, depth) {
     var me = this;
     var $ = me.constructor;

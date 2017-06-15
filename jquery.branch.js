@@ -1,12 +1,12 @@
-(function (modules, root, factory) {
+(function (root, factory) {
   if (typeof define === "function" && define.amd) {
-    define(modules, factory);
+    define([], factory);
   } else if (typeof module === "object" && module.exports) {
-    module.exports = factory.call(root);
+    module.exports = factory();
   } else {
-    root["mu-jquery-climb/jquery.branch"] = factory.call(root);
+    root["mu-jquery-climb/jquery.branch"] = factory();
   }
-})([], this, function () {
+})(this, function () {
   return function (selector, root) {
     var me = this;
     var $ = me.constructor;
